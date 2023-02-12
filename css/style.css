@@ -1,3 +1,7 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
 .page {display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -159,15 +163,11 @@
 .container {
     width: 100%;
     max-width: 911px;
-    flex-wrap: wrap;
     margin: 0 auto;
     flex-grow: 1;
-    font-family: 'Roboto', sans-serif;
 }
 
 .container-heading {
-    flex-wrap: wrap;
-    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -187,7 +187,6 @@ h2 {
 }
 
 .intro-text {
-    flex-wrap: wrap;
     width: 100%;
     max-width: 634px;
     font-style: normal;
@@ -197,6 +196,67 @@ h2 {
 
 em {
     color: #CF5510;
+}
+
+/* Studens */
+
+.stud-table {
+    width: 100%;
+    max-width: 1202px;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+.students {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.student {
+    padding-right: 50px;
+}
+
+.student-photo {
+    width: 100%;
+    max-width: 200px;
+    max-height: 270px;
+}
+
+.student-name {
+    display: block;
+    text-align: center;
+}
+
+/* about-us */
+
+.video-img {
+    width: 100%;
+    max-width: 820px;
+    max-height: 549.330078125px;
+    border: 2px, solid, #EA5D21;
+}
+
+/* contacts */
+
+.table {
+    width: 100%;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+.map-img {
+    width: 100%;
+    max-width: 1268px;
+    max-height: 474px;
+    display: block;
+    margin: auto;
+}
+
+.contacts-text {
+    font-weight: 400;
+    font-size: 18px;
 }
 
 /* footer */
