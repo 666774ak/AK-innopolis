@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <script async src="./js/popup.js"></script>
     <title>Сайт группы</title>
@@ -15,7 +15,7 @@
 
 <body class="page">
     <header class="header">
-        <img src="./img/logo.svg">
+        <img class="inno-logo" src="./img/logo.svg" alt="Innopolis">
         <ul class="site-menu">
             <li><a class="menu-link active-link" href="#">Главная</a></li>
             <li><a class="menu-link" href="./pages/student.html">Студенты</a></li>
@@ -34,14 +34,19 @@
     </header>
     <main class="container">
         <h1 class="container-heading">Добро пожаловать на курс “Создание веб-сайтов (HTML, CSS)”!</h1>
-        <img class="class-img" src="./img/class.png">
+        <img class="class-img" src="./img/class.png" alt="class">
         <h2>Для кого этот курс</h2>
-        <p class="intro-text">Этот курс рассчитан на новичков, которые только начинают знакомство <br>
+        <div class="intro-wrapper">
+            <p class="intro-text">Этот курс рассчитан на новичков, которые только начинают знакомство <br>
             с веб-разработкой. В начале курса вы узнаете о том, как устроен <br>
             Интернет и веб-сайты. <br>
             Для обучения необходимо только владеть компьютерной грамотностью <br>
             (пользоваться браузером, создавать папки и файлы, устанавливать <br>
             программы).</p>
+            <aside class="aside-together">
+                <blockquote class="together">&#8220;Учимся<br> вместе!&#8221;</blockquote>
+            </aside>
+        </div>
         <h2>Чему вы научитесь</h2>
         <p class="intro-text">На этом курсе вы узнаете, как устроены веб-сайты и как создавать их с <br>
             нуля. Изучите основы языков <strong>HTML</strong>, <strong>CSS</strong> и немного
