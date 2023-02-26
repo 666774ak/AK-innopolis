@@ -97,6 +97,20 @@ html {
     background-color: #ffffff;
 }
 
+.close-btn {
+    position: absolute;
+    top: -35px;
+    right: -25px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    border-radius: 50%;
+    transform: rotate(360deg);
+}
+
 .login-heading {
     font-family: 'Roboto';
     font-style: normal;
@@ -200,10 +214,6 @@ h2 {
     flex-wrap: wrap;
 }
 
-.aside-together {
-
-}
-
 .together {
     font-family: 'Lobster';
     font-style: normal;
@@ -248,15 +258,60 @@ em {
     padding-right: 50px;
 }
 
+.kozin-btn {
+    position: relative;
+    display:inline-block;
+    padding: 1em 2em;
+    text-decoration: none;
+    color: #000000;
+    font-size: 1rem;
+    border-radius: 1.130em;
+    background-color: white;
+}
+
+.kozin-btn::after {
+    content:'';
+    position: absolute;
+    z-index: -1;
+    top: -.125em;
+    left: -.125em;
+    width: calc(100% + .25em);
+    height: calc(100% + .25em);
+    border-radius: .25em;
+    background-image: linear-gradient(45deg,#f79533,  #5073b8);
+    background-size: 200%;
+    animation: animateborder 3s ease infinite paused;
+}
+
+.kozin-btn:hover::after{
+    animation-play-state: running;
+}
+
 .student-photo {
     width: 100%;
     max-width: 200px;
     max-height: 270px;
 }
 
+.newbie {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+    background-color: #3AA828;
+    padding: 2px 6px 2px;
+    border-radius: 20px;
+    text-decoration: none;
+    position: relative;
+    top: -334px;
+    left: 96px
+}
+
 .student-name {
     display: block;
     text-align: center;
+    text-decoration: none;
 }
 
 /* about-us */
@@ -360,5 +415,17 @@ em {
     .site-menu {
         width: 60%;
         min-height: 80px;
+    }
+}
+
+@keyframes animateborder {
+    0% {
+        background-position: 0%;
+    }
+    50% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: 0%;
     }
 }
